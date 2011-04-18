@@ -12,36 +12,37 @@
 </head>
 
 <body>
-  <div class='container'>
-    <div id='whoami'>
-      <div class='header'>
-        Meta <br/> Mojo
-      </div>
-      <div style='float:left' class='person'>
-        <img class='profilepic' src='../static/me.jpg' />
-        <div style='float:left'>
-        <h2>Srinivasan T</h2>
-        Madison, WI
-        </div>
-      </div>
-
-      <div style='float:right; margin-right: 20px; margin-top: 45px' class='links'>
-        <a style='float:right; margin: 0 5px' href='#'> Logout </a>
-        <a style='float:right; margin: 0 5px' href='#'> Settings </a>
-        
-        <a href='#' style='float:right; margin: 0 2px'> Back Home </a> 
-        <img style='float:right' src='../static/smi/icon-home.png'>
-      </div>
+  <div id='whoami-wrapper'>
+  <div id='whoami'>
+    <div class='menuitem logo'>
+      <div class='mojo'> Meta <br /> Mojo </div>
     </div>
     
+    <div class='person menuitem inactive'>
+      <img style='float:left' class='profilepic' src='../static/me.jpg' />
+      <div class='mojo'>Me</div>
+    </div>
+    
+    <div class='main-actions active menuitem mlast'>
+      <img style='float:left; width:80px; margin: 0.1 0.5em' src='../static/smi/graph.png'> 
+      <div class='mojo'>My Mojo</div>
+    </div>
+
+    <div style='float:right; width: 100px; padding: 10px 25px 0 0' class='links'>
+      <a style='float:right; margin: 0 5px; color: #333' href='#'> Settings </a>
+      <a style='float:right; margin: 0 5px; color: #333' href='#'> Logout</a>
+    </div>
+  </div>
+  </div>
+  
+  <div class='container'>
     <div class='span-15' id='center'>    
       <form class='clearfix' id='new_entry'>
         <textarea>Whats in your mind?</textarea>
-        <br />
         <div id='smiley-strip'>
           <img class='smi' src='../static/smi/tears.png'>
           <img class='smi' src='../static/smi/sad.png'>
-          <img class='smi' src='../static/smi/dry.png'>
+          <img class='smi selected' src='../static/smi/dry.png'>
           <img class='smi' src='../static/smi/smile.png'>
           <img class='smi' src='../static/smi/biggrin.png'>
         </div>
